@@ -33,9 +33,9 @@ export function FAQ() {
       <div className="max-w-3xl mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
           <h2 className="text-sm font-mono text-neutral-400 uppercase tracking-widest mb-3 font-medium">FAQ</h2>
-          <h3 className="text-3xl font-medium text-white">
+          <h2 className="text-3xl font-display font-medium text-white tracking-tight">
             Common questions
-          </h3>
+          </h2>
         </div>
 
         <div className="space-y-4">

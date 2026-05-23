@@ -37,9 +37,9 @@ export function Projects() {
           className="mb-16"
         >
           <h2 className="text-sm font-mono text-neutral-500 uppercase tracking-widest mb-3 font-medium">Success stories</h2>
-          <h3 className="text-3xl md:text-4xl font-medium text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-medium tracking-tight text-white mb-4">
             Systems in production
-          </h3>
+          </h2>
           <p className="text-neutral-400 text-lg font-light">
             Real pipelines solving complex entity problems natively 24/7.
           </p>
@@ -55,7 +55,7 @@ export function Projects() {
               transition={{ delay: index * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="h-full"
             >
-              <SpotlightCard className="h-full flex flex-col !bg-neutral-900 border-neutral-800">
+              <SpotlightCard className="h-full flex flex-col">
                 <div className="p-6 md:p-8 flex-grow">
                   <div className="inline-block px-3 py-1 rounded-full bg-neutral-800 border border-white/5 text-xs font-mono text-neutral-300 mb-6 font-medium">
                     {project.category}

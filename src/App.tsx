@@ -3,19 +3,22 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { Suspense, lazy } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { Services } from './components/Services';
-import { Stats } from './components/Stats';
-import { Workflow } from './components/Workflow';
-import { Projects } from './components/Projects';
-import { WhyUs } from './components/WhyUs';
-import { Industries } from './components/Industries';
-import { Testimonials } from './components/Testimonials';
-import { FAQ } from './components/FAQ';
-import { Contact } from './components/Contact';
-import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
+
+// Lazy loading below-the-fold components
+const Services = lazy(() => import('./components/Services').then(module => ({ default: module.Services })));
+const Stats = lazy(() => import('./components/Stats').then(module => ({ default: module.Stats })));
+const Workflow = lazy(() => import('./components/Workflow').then(module => ({ default: module.Workflow })));
+const Projects = lazy(() => import('./components/Projects').then(module => ({ default: module.Projects })));
+const WhyUs = lazy(() => import('./components/WhyUs').then(module => ({ default: module.WhyUs })));
+const Industries = lazy(() => import('./components/Industries').then(module => ({ default: module.Industries })));
+const Testimonials = lazy(() => import('./components/Testimonials').then(module => ({ default: module.Testimonials })));
+const FAQ = lazy(() => import('./components/FAQ').then(module => ({ default: module.FAQ })));
+const Contact = lazy(() => import('./components/Contact').then(module => ({ default: module.Contact })));
+const CTA = lazy(() => import('./components/CTA').then(module => ({ default: module.CTA })));
 
 export default function App() {
   return (
@@ -24,16 +27,18 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Services />
-        <Stats />
-        <Workflow />
-        <Projects />
-        <WhyUs />
-        <Industries />
-        <Testimonials />
-        <FAQ />
-        <Contact />
-        <CTA />
+        <Suspense fallback={<div className="h-32 flex items-center justify-center text-neutral-500">Loading...</div>}>
+          <Services />
+          <Stats />
+          <Workflow />
+          <Projects />
+          <WhyUs />
+          <Industries />
+          <Testimonials />
+          <FAQ />
+          <Contact />
+          <CTA />
+        </Suspense>
       </main>
       <Footer />
     </div>

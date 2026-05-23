@@ -8,7 +8,7 @@ export function CTA() {
       <SubtleMesh />
 
       {/* Cinematic ambient glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 blur-[150px] rounded-full pointer-events-none z-0" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/10 blur-[150px] rounded-full pointer-events-none z-0" />
       
       <div className="absolute inset-0 bg-neutral-950/20 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black_80%)]" />
       
@@ -19,10 +19,10 @@ export function CTA() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="w-12 h-12 bg-white text-black rounded-lg flex items-center justify-center font-bold text-2xl font-mono mx-auto mb-10 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+          <div className="w-12 h-12 bg-white text-black rounded-lg flex items-center justify-center font-bold text-2xl font-display mx-auto mb-10 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
             IS
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-medium text-white leading-[1.1] mb-8">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-display font-medium text-white tracking-tight leading-[1.05] mb-8">
             Transform your business operations
           </h2>
           <p className="text-lg md:text-xl text-neutral-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed">

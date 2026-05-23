@@ -47,9 +47,9 @@ export function Services() {
           className="mb-16 max-w-2xl"
         >
           <h2 className="text-sm font-mono text-neutral-500 uppercase tracking-widest mb-3 font-medium">Our Services</h2>
-          <h3 className="text-3xl md:text-4xl font-medium text-white leading-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-medium tracking-tight text-white leading-tight mb-4">
             Intelligent automation, end to end
-          </h3>
+          </h2>
           <p className="text-neutral-400 text-lg font-light">
             Every system we deliver is production-grade from day one. Designed for scale, reliability, and measurable impact.
           </p>

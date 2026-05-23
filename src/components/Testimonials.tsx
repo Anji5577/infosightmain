@@ -27,7 +27,7 @@ export function Testimonials() {
           <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-neutral-400 mb-6">
             Client Results
           </div>
-          <h2 className="text-3xl md:text-4xl font-medium text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-medium tracking-tight text-white mb-4">
             Trusted by teams scaling with AI.
           </h2>
           <p className="text-neutral-400 text-lg max-w-2xl mx-auto font-light">

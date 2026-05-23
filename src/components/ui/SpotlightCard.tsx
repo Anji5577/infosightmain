@@ -68,14 +68,15 @@ export function SpotlightCard({
         transform,
         transition: isHovered ? "transform 0.1s cubic-bezier(0.2, 0.8, 0.2, 1)" : "transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)",
       }}
-      className={`relative overflow-hidden rounded-xl border border-white/10 bg-neutral-900/50 transition-colors duration-500 hover:bg-neutral-900 will-change-transform ${className}`}
+      className={`relative overflow-hidden rounded-xl border border-white/[0.08] bg-white/[0.02] backdrop-blur-md shadow-2xl transition-colors duration-500 hover:bg-white/[0.04] will-change-transform ${className}`}
     >
       <div
         className="pointer-events-none absolute -inset-px transition-opacity duration-500"
         style={{
           opacity,
-          background: `radial-gradient(500px circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.06), transparent 40%)`,
+          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(255,255,255,0.08), transparent 40%)`,
         }}
+
       />
       <div className="relative z-10 w-full h-full flex flex-col">
         {children}

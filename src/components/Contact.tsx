@@ -35,7 +35,7 @@ export function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-medium text-white mb-6 tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-display font-medium text-white mb-6 tracking-tight">
             Let's build something <span className="bg-gradient-to-r from-neutral-400 to-neutral-600 bg-clip-text text-transparent">together.</span>
           </h2>
           <p className="text-neutral-400 text-lg font-light">

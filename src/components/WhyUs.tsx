@@ -47,9 +47,9 @@ export function WhyUs() {
           className="mb-20 max-w-2xl mx-auto text-center"
         >
           <h2 className="text-sm font-mono text-neutral-500 uppercase tracking-widest mb-3 font-medium">Why InfoSightAI</h2>
-          <h3 className="text-3xl md:text-4xl font-medium text-white">
+          <h2 className="text-3xl md:text-4xl font-display font-medium tracking-tight text-white">
             Built different by design
-          </h3>
+          </h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -62,7 +62,7 @@ export function WhyUs() {
               transition={{ delay: index * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="h-full"
             >
-              <SpotlightCard className="h-full p-6 md:p-8 !bg-neutral-950/50 border-neutral-800">
+              <SpotlightCard className="h-full p-6 md:p-8">
                 <div className="w-8 h-8 rounded border border-white/10 flex items-center justify-center bg-white/5 mb-6">
                   {reason.icon}
                 </div>
