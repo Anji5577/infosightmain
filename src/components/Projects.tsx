@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { SpotlightCard } from './ui/SpotlightCard';
 
 export function Projects() {
   const projects = [
@@ -26,17 +27,23 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-24 border-b border-white/5 bg-neutral-950/30">
+    <section id="projects" className="py-32 border-b border-white/5 bg-neutral-950/30">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="mb-16">
-          <h2 className="text-sm font-mono text-neutral-400 uppercase tracking-widest mb-3">Success stories</h2>
-          <h3 className="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-4">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-16"
+        >
+          <h2 className="text-sm font-mono text-neutral-500 uppercase tracking-widest mb-3 font-medium">Success stories</h2>
+          <h3 className="text-3xl md:text-4xl font-medium text-white mb-4">
             Systems in production
           </h3>
-          <p className="text-neutral-400 text-lg">
+          <p className="text-neutral-400 text-lg font-light">
             Real pipelines solving complex entity problems natively 24/7.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
@@ -44,27 +51,29 @@ export function Projects() {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="flex flex-col rounded-xl bg-neutral-900 border border-neutral-800 overflow-hidden"
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ delay: index * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="h-full"
             >
-              <div className="p-6 md:p-8 flex-grow">
-                <div className="inline-block px-3 py-1 rounded-full bg-neutral-800 border border-white/5 text-xs font-mono text-neutral-300 mb-6">
-                  {project.category}
+              <SpotlightCard className="h-full flex flex-col !bg-neutral-900 border-neutral-800">
+                <div className="p-6 md:p-8 flex-grow">
+                  <div className="inline-block px-3 py-1 rounded-full bg-neutral-800 border border-white/5 text-xs font-mono text-neutral-300 mb-6 font-medium">
+                    {project.category}
+                  </div>
+                  <h4 className="text-xl font-medium text-white mb-2">{project.title}</h4>
+                  <div className="text-xs font-mono text-neutral-500 mb-4">{project.client}</div>
+                  <p className="text-sm text-neutral-400 font-light leading-relaxed">
+                    {project.description}
+                  </p>
                 </div>
-                <h4 className="text-xl font-medium text-white mb-2 tracking-tight">{project.title}</h4>
-                <div className="text-xs font-mono text-neutral-500 mb-4">{project.client}</div>
-                <p className="text-sm text-neutral-400 leading-relaxed">
-                  {project.description}
-                </p>
-              </div>
-              <div className="px-6 md:px-8 py-4 bg-neutral-950 border-t border-neutral-800 flex flex-wrap gap-2">
-                {project.metrics.map((metric, i) => (
-                  <span key={i} className="text-xs font-mono text-neutral-400 px-2 py-1 rounded bg-neutral-900 border border-neutral-800">
-                    {metric}
-                  </span>
-                ))}
-              </div>
+                <div className="px-6 md:px-8 py-5 border-t border-white/5 flex flex-wrap gap-2">
+                  {project.metrics.map((metric, i) => (
+                    <span key={i} className="text-xs font-mono text-neutral-300 px-2.5 py-1 rounded bg-white/5 border border-white/5">
+                      {metric}
+                    </span>
+                  ))}
+                </div>
+              </SpotlightCard>
             </motion.div>
           ))}
         </div>

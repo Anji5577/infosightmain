@@ -1,16 +1,7 @@
 import { motion } from 'motion/react';
+import { SpotlightCard } from './ui/SpotlightCard';
 
 export function Industries() {
-  const industries = [
-    { name: "AEC & Construction", icon: "🏢" },
-    { name: "Finance", icon: "📉" },
-    { name: "Healthcare", icon: "🏥" },
-    { name: "Real Estate", icon: "🔑" },
-    { name: "Logistics", icon: "📦" },
-    { name: "E-commerce", icon: "🛍️" },
-  ];
-
-  // Replacing emojis with clean technical text/abbreviations to match strict SaaS style
   const cleanIndustries = [
     { name: "AEC & Construction", short: "AEC" },
     { name: "Financial Services", short: "FIN" },
@@ -21,32 +12,40 @@ export function Industries() {
   ];
 
   return (
-    <section className="py-24 border-b border-white/5 bg-neutral-950">
+    <section className="py-32 border-b border-white/5 bg-neutral-950">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20"
+        >
           <div>
-            <h2 className="text-sm font-mono text-neutral-400 uppercase tracking-widest mb-3">Industries</h2>
-            <h3 className="text-3xl md:text-4xl font-semibold text-white tracking-tight">
+            <h2 className="text-sm font-mono text-neutral-500 uppercase tracking-widest mb-3 font-medium">Industries</h2>
+            <h3 className="text-3xl md:text-4xl font-medium text-white">
               Automation for every sector
             </h3>
           </div>
-          <p className="text-neutral-400 max-w-sm md:text-right">
+          <p className="text-neutral-400 max-w-sm md:text-right font-light leading-relaxed">
             Architecturally flexible infrastructure that adapts perfectly across distinct operational domains.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {cleanIndustries.map((ind, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.05, duration: 0.4 }}
-              className="flex flex-col justify-center items-center text-center p-6 bg-neutral-900 border border-neutral-800 rounded-lg hover:border-neutral-700 hover:bg-neutral-800/50 transition-colors"
+              initial={{ opacity: 0, scale: 0.95, y: 10 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ delay: index * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="h-full"
             >
-              <div className="text-xl font-mono font-semibold text-neutral-600 mb-3">{ind.short}</div>
-              <h4 className="text-sm font-medium text-neutral-300">{ind.name}</h4>
+              <SpotlightCard className="h-full flex flex-col justify-center items-center text-center p-6 !bg-neutral-900 border-neutral-800">
+                <div className="text-xl font-mono font-semibold text-white/50 mb-3">{ind.short}</div>
+                <h4 className="text-sm font-medium text-neutral-300">{ind.name}</h4>
+              </SpotlightCard>
             </motion.div>
           ))}
         </div>

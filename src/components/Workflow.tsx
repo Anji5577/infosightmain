@@ -25,30 +25,38 @@ export function Workflow() {
   ];
 
   return (
-    <section className="py-24 border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="mb-16">
-          <h2 className="text-sm font-mono text-neutral-400 uppercase tracking-widest mb-3">How it works</h2>
-          <h3 className="text-3xl md:text-4xl font-semibold text-white tracking-tight">
+    <section className="py-32 border-b border-white/5 relative overflow-hidden">
+      <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-y-1/2 hidden md:block"></div>
+      
+      <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-20 text-center"
+        >
+          <h2 className="text-sm font-mono text-neutral-500 uppercase tracking-widest mb-3 font-medium">How it works</h2>
+          <h3 className="text-3xl md:text-4xl font-medium text-white">
             From chaos to clarity in 4 steps
           </h3>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="relative p-6 pt-8 bg-neutral-900 border border-white/10 rounded-xl"
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ delay: index * 0.15, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="relative p-6 pt-8 bg-black border border-white/10 rounded-xl"
             >
-              <span className="absolute top-4 right-6 text-3xl font-mono font-bold text-neutral-800 pointer-events-none select-none">
-                {step.number}
-              </span>
+              <div className="absolute -top-3 left-6 px-2 bg-black text-xs font-mono text-neutral-500 border border-white/10 rounded px-2 py-1">
+                STEP {step.number}
+              </div>
               <h4 className="text-lg font-medium text-white mb-2 mt-4">{step.title}</h4>
-              <p className="text-sm text-neutral-400 leading-relaxed">
+              <p className="text-sm text-neutral-400 font-light leading-relaxed">
                 {step.description}
               </p>
             </motion.div>

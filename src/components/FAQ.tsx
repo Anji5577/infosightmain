@@ -32,8 +32,8 @@ export function FAQ() {
     <section id="faq" className="py-24 border-b border-white/5">
       <div className="max-w-3xl mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-mono text-neutral-400 uppercase tracking-widest mb-3">FAQ</h2>
-          <h3 className="text-3xl font-semibold text-white tracking-tight">
+          <h2 className="text-sm font-mono text-neutral-400 uppercase tracking-widest mb-3 font-medium">FAQ</h2>
+          <h3 className="text-3xl font-medium text-white">
             Common questions
           </h3>
         </div>
