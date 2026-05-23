@@ -1,0 +1,6 @@
+{
+  "name": "InfoSightAI",
+  "description": "A premium AI agents & automation platform trusted by enterprise companies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
