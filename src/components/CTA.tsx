@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { SubtleMesh } from './ui/SubtleMesh';
+import logo from '@/logo.png';
 
 export function CTA() {
   return (
@@ -19,8 +20,13 @@ export function CTA() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="w-12 h-12 bg-white text-black rounded-lg flex items-center justify-center font-bold text-2xl font-display mx-auto mb-10 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
-            IS
+          <div className="flex items-center justify-center mb-10">
+            <img
+              src={logo}
+              alt="InfoSightAI Logo"
+              className="h-10 md:h-12 w-auto max-w-[200px] md:max-w-none object-contain"
+              style={{ filter: 'invert(1) hue-rotate(180deg)' }}
+            />
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-display font-medium text-white tracking-tight leading-[1.05] mb-8">
             Transform your business operations

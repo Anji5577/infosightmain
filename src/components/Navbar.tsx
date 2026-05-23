@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import logo from '@/logo.png';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,12 +33,12 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-white text-black rounded flex items-center justify-center font-bold text-lg font-mono">
-            IS
-          </div>
-          <span className="text-white font-semibold tracking-tight text-lg group-hover:opacity-80 transition-opacity">
-            InfoSightAI
-          </span>
+          <img
+            src={logo}
+            alt="InfoSightAI Logo"
+            className="h-6 md:h-8 w-auto max-w-[160px] md:max-w-none object-contain transition-opacity group-hover:opacity-80"
+            style={{ filter: 'invert(1) hue-rotate(180deg)' }}
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-8">

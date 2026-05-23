@@ -1,3 +1,5 @@
+import logo from '@/logo.png';
+
 export function Footer() {
   return (
     <footer className="bg-black pt-20 pb-10 border-t border-neutral-900">
@@ -5,12 +7,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-20">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-6 h-6 bg-white text-black rounded flex items-center justify-center font-bold text-xs font-mono">
-                IS
-              </div>
-              <span className="text-white font-semibold tracking-tight">
-                InfoSightAI
-              </span>
+              <img
+                src={logo}
+                alt="InfoSightAI Logo"
+                className="h-6 md:h-7 w-auto max-w-[160px] md:max-w-none object-contain"
+                style={{ filter: 'invert(1) hue-rotate(180deg)' }}
+              />
             </div>
             <p className="text-sm text-neutral-400 leading-relaxed max-w-xs mb-6">
               AI & Automation Services.<br />
