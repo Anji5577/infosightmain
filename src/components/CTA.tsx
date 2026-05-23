@@ -24,8 +24,7 @@ export function CTA() {
             <img
               src={logo}
               alt="InfoSightAI Logo"
-              className="h-10 md:h-12 w-auto max-w-[200px] md:max-w-none object-contain"
-              style={{ filter: 'invert(1) hue-rotate(180deg)' }}
+              className="h-8 md:h-10 w-auto max-w-[240px] md:max-w-none object-contain"
             />
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-display font-medium text-white tracking-tight leading-[1.05] mb-8">

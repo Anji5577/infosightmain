@@ -36,8 +36,7 @@ export function Navbar() {
           <img
             src={logo}
             alt="InfoSightAI Logo"
-            className="h-6 md:h-8 w-auto max-w-[160px] md:max-w-none object-contain transition-opacity group-hover:opacity-80"
-            style={{ filter: 'invert(1) hue-rotate(180deg)' }}
+            className="h-5 md:h-6 w-auto max-w-[180px] md:max-w-none object-contain transition-opacity group-hover:opacity-80"
           />
         </a>
 

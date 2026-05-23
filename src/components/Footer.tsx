@@ -10,8 +10,7 @@ export function Footer() {
               <img
                 src={logo}
                 alt="InfoSightAI Logo"
-                className="h-6 md:h-7 w-auto max-w-[160px] md:max-w-none object-contain"
-                style={{ filter: 'invert(1) hue-rotate(180deg)' }}
+                className="h-5 md:h-6 w-auto max-w-[180px] md:max-w-none object-contain"
               />
             </div>
             <p className="text-sm text-neutral-400 leading-relaxed max-w-xs mb-6">

@@ -1,13 +1,25 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Terminal } from 'lucide-react';
-import { SplineScene } from './ui/SplineScene';
+import { SplineScene } from '@/components/ui/splite';
+import { Spotlight } from '@/components/ui/spotlight';
 
 export function Hero() {
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden flex min-h-[90vh] items-center">
       
+      {/* Spotlight Ambient Beam */}
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="white"
+      />
+
       {/* Spline 3D Scene */}
-      <SplineScene />
+      <div className="absolute top-0 right-0 w-full lg:w-[800px] h-full z-0 pointer-events-auto flex items-center justify-center">
+        <SplineScene 
+          scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+          className="w-full h-full"
+        />
+      </div>
 
       {/* Cinematic Deep Glow */}
       <div className="absolute top-0 left-0 w-full max-w-2xl h-[600px] bg-white/5 blur-[120px] rounded-full pointer-events-none z-0" />
