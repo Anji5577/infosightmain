@@ -63,11 +63,13 @@ export function Hero() {
         </div>
 
         {/* Right 3D Content Container: Stacked relative on mobile/tablet, absolutely positioned on desktop */}
-        <div className="relative lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0 w-full lg:w-[48%] xl:w-[800px] h-[320px] sm:h-[400px] lg:h-[90%] z-0 flex items-center justify-center mt-6 lg:mt-0">
-          <SplineScene 
-            scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-            className="w-full h-full"
-          />
+        <div className="relative lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-4 w-full lg:w-[42%] max-w-[640px] xl:max-w-[680px] h-[260px] sm:h-[320px] lg:h-[80%] z-0 flex items-center justify-center mt-4 lg:mt-0 overflow-hidden pointer-events-none select-none">
+          <div className="w-full h-full transform scale-[0.9] lg:scale-[1.18] transition-transform duration-500 ease-out origin-center">
+            <SplineScene 
+              scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+              className="w-full h-full pointer-events-auto"
+            />
+          </div>
         </div>
 
       </div>
