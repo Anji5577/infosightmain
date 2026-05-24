@@ -2,9 +2,9 @@ import logo from '@/logo.png';
 
 export function Footer() {
   return (
-    <footer className="bg-black pt-20 pb-10 border-t border-neutral-900">
+    <footer className="bg-black pt-16 pb-8 border-t border-neutral-900">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-12">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-6">
               <img
@@ -23,8 +23,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider mb-6">Services</h4>
-            <ul className="space-y-4">
+            <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider mb-4">Services</h4>
+            <ul className="space-y-2.5">
               <li><a href="#services" className="text-sm text-neutral-400 hover:text-white transition-colors">AI Workflow Automation</a></li>
               <li><a href="#services" className="text-sm text-neutral-400 hover:text-white transition-colors">RFP Automation</a></li>
               <li><a href="#services" className="text-sm text-neutral-400 hover:text-white transition-colors">PM Automation</a></li>
@@ -33,8 +33,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider mb-6">Company</h4>
-            <ul className="space-y-4">
+            <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider mb-4">Company</h4>
+            <ul className="space-y-2.5">
               <li><a href="https://info-sight.net/about_us.html" target="_blank" rel="noreferrer" className="text-sm text-neutral-400 hover:text-white transition-colors">About</a></li>
               <li><a href="#projects" className="text-sm text-neutral-400 hover:text-white transition-colors">Projects</a></li>
               <li><a href="https://info-sight.net/contact_us.html" target="_blank" rel="noreferrer" className="text-sm text-neutral-400 hover:text-white transition-colors">Contact</a></li>
@@ -43,8 +43,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider mb-6">Resources</h4>
-            <ul className="space-y-4">
+            <h4 className="text-xs font-mono font-semibold text-neutral-500 uppercase tracking-wider mb-4">Resources</h4>
+            <ul className="space-y-2.5">
               <li><a href="#" className="text-sm text-neutral-400 hover:text-white transition-colors">n8n Cloud</a></li>
               <li><a href="#" className="text-sm text-neutral-400 hover:text-white transition-colors">Google Gemini</a></li>
               <li><a href="#" className="text-sm text-neutral-400 hover:text-white transition-colors">Supabase</a></li>
@@ -53,7 +53,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-neutral-900 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-6 border-t border-neutral-900 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-neutral-500">
             © 2026 InfoSightAI. All rights reserved.
           </p>

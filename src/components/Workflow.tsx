@@ -25,7 +25,7 @@ export function Workflow() {
   ];
 
   return (
-    <section className="py-32 border-b border-white/5 relative overflow-hidden">
+    <section className="py-16 md:py-20 border-b border-white/5 relative overflow-hidden">
       <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-y-1/2 hidden md:block"></div>
       
       <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
@@ -34,7 +34,7 @@ export function Workflow() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-20 text-center"
+          className="mb-10 md:mb-12 text-center"
         >
           <h2 className="text-sm font-mono text-neutral-500 uppercase tracking-widest mb-3 font-medium">How it works</h2>
           <h2 className="text-3xl md:text-4xl font-display font-medium tracking-tight text-white">
@@ -50,7 +50,7 @@ export function Workflow() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.15, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="relative p-6 pt-8 bg-black border border-white/10 rounded-xl"
+              className="relative p-5 pt-7 bg-black border border-white/10 rounded-xl"
             >
               <div className="absolute -top-3 left-6 px-2 bg-black text-xs font-mono text-neutral-500 border border-white/10 rounded px-2 py-1">
                 STEP {step.number}

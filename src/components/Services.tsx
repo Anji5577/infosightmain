@@ -37,14 +37,14 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="py-32 border-t border-white/5 relative">
+    <section id="services" className="py-16 md:py-20 border-t border-white/5 relative">
       <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-16 max-w-2xl"
+          className="mb-10 max-w-2xl"
         >
           <h2 className="text-sm font-mono text-neutral-500 uppercase tracking-widest mb-3 font-medium">Our Services</h2>
           <h2 className="text-3xl md:text-4xl font-display font-medium tracking-tight text-white leading-tight mb-4">
@@ -65,11 +65,11 @@ export function Services() {
               transition={{ delay: index * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className={service.colSpan}
             >
-              <SpotlightCard className="h-full p-6 sm:p-8">
-                <div className="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center bg-white/5 mb-6 shadow-inner shadow-white/5">
+              <SpotlightCard className="h-full p-5 sm:p-6">
+                <div className="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center bg-white/5 mb-4 shadow-inner shadow-white/5">
                   {service.icon}
                 </div>
-                <h4 className="text-xl font-medium text-white mb-3">{service.title}</h4>
+                <h4 className="text-xl font-medium text-white mb-2">{service.title}</h4>
                 <p className="text-neutral-400 leading-relaxed font-light flex-grow">
                   {service.description}
                 </p>

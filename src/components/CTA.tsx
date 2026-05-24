@@ -4,7 +4,7 @@ import logo from '@/logo.png';
 
 export function CTA() {
   return (
-    <section className="py-40 border-b border-white/5 relative overflow-hidden bg-black">
+    <section className="py-20 md:py-24 border-b border-white/5 relative overflow-hidden bg-black">
       {/* 3D Wireframe Depth System */}
       <SubtleMesh />
 
@@ -20,17 +20,17 @@ export function CTA() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="flex items-center justify-center mb-10">
+          <div className="flex items-center justify-center mb-6">
             <img
               src={logo}
               alt="InfoSightAI Logo"
               className="h-8 md:h-10 w-auto max-w-[240px] md:max-w-none object-contain"
             />
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-display font-medium text-white tracking-tight leading-[1.05] mb-8">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-display font-medium text-white tracking-tight leading-[1.05] mb-4">
             Transform your business operations
           </h2>
-          <p className="text-lg md:text-xl text-neutral-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-lg md:text-xl text-neutral-400 mb-8 max-w-2xl mx-auto font-light leading-relaxed">
             Deploy intelligent automation processes mapped directly to your internal needs and accelerate operational efficiency significantly.
           </p>
           <a

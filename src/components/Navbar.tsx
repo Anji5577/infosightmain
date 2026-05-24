@@ -11,7 +11,7 @@ export function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -27,8 +27,8 @@ export function Navbar() {
     <nav
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 border-b ${
         isScrolled
-          ? 'bg-black/80 backdrop-blur-md border-white/10 py-4'
-          : 'bg-transparent border-transparent py-6'
+          ? 'bg-black/80 backdrop-blur-md border-white/10 py-3'
+          : 'bg-transparent border-transparent py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between">

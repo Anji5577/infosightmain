@@ -15,14 +15,14 @@ export function Testimonials() {
   ];
 
   return (
-    <section id="reviews" className="py-32 border-b border-white/5 overflow-hidden bg-neutral-950/50">
+    <section id="reviews" className="py-16 md:py-20 border-b border-white/5 overflow-hidden bg-neutral-950/50">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="text-center mb-20"
+          className="text-center mb-10"
         >
           <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-neutral-400 mb-6">
             Client Results
@@ -43,10 +43,10 @@ export function Testimonials() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="flex flex-col p-8 md:p-10 rounded-xl bg-black border border-white/5 relative shadow-2xl"
+              className="flex flex-col p-6 md:p-8 rounded-xl bg-black border border-white/5 relative shadow-2xl"
             >
               <div className="absolute top-0 right-0 p-8 text-6xl font-serif text-white/5 leading-none select-none">"</div>
-              <p className="text-neutral-300 text-base md:text-lg leading-relaxed relative z-10 font-light mb-10">
+              <p className="text-neutral-300 text-base md:text-lg leading-relaxed relative z-10 font-light mb-6">
                 {review.quote}
               </p>
               <div className="mt-auto pt-6 border-t border-white/5">

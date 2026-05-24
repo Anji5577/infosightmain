@@ -27,14 +27,14 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-32 border-b border-white/5 bg-neutral-950/30">
+    <section id="projects" className="py-16 md:py-20 border-b border-white/5 bg-neutral-950/30">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-16"
+          className="mb-10"
         >
           <h2 className="text-sm font-mono text-neutral-500 uppercase tracking-widest mb-3 font-medium">Success stories</h2>
           <h2 className="text-3xl md:text-4xl font-display font-medium tracking-tight text-white mb-4">
@@ -56,8 +56,8 @@ export function Projects() {
               className="h-full"
             >
               <SpotlightCard className="h-full flex flex-col">
-                <div className="p-6 md:p-8 flex-grow">
-                  <div className="inline-block px-3 py-1 rounded-full bg-neutral-800 border border-white/5 text-xs font-mono text-neutral-300 mb-6 font-medium">
+                <div className="p-5 md:p-6 flex-grow">
+                  <div className="inline-block px-3 py-1 rounded-full bg-neutral-800 border border-white/5 text-xs font-mono text-neutral-300 mb-4 font-medium">
                     {project.category}
                   </div>
                   <h4 className="text-xl font-medium text-white mb-2">{project.title}</h4>
@@ -66,7 +66,7 @@ export function Projects() {
                     {project.description}
                   </p>
                 </div>
-                <div className="px-6 md:px-8 py-5 border-t border-white/5 flex flex-wrap gap-2">
+                <div className="px-5 md:px-6 py-4 border-t border-white/5 flex flex-wrap gap-2">
                   {project.metrics.map((metric, i) => (
                     <span key={i} className="text-xs font-mono text-neutral-300 px-2.5 py-1 rounded bg-white/5 border border-white/5">
                       {metric}

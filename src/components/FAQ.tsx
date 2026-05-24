@@ -29,16 +29,16 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 border-b border-white/5">
+    <section id="faq" className="py-16 md:py-20 border-b border-white/5">
       <div className="max-w-3xl mx-auto px-6 md:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-sm font-mono text-neutral-400 uppercase tracking-widest mb-3 font-medium">FAQ</h2>
           <h2 className="text-3xl font-display font-medium text-white tracking-tight">
             Common questions
           </h2>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
@@ -48,7 +48,7 @@ export function FAQ() {
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="w-full flex items-center justify-between p-5 md:p-6 text-left"
+                  className="w-full flex items-center justify-between p-4 md:p-5 text-left"
                 >
                   <span className="font-medium text-white text-base">{faq.question}</span>
                   <ChevronDown 
@@ -64,7 +64,7 @@ export function FAQ() {
                       exit={{ height: 0, opacity: 0 }}
                       className="overflow-hidden"
                     >
-                      <div className="p-5 md:p-6 pt-0 text-sm text-neutral-400 leading-relaxed">
+                      <div className="p-4 md:p-5 pt-0 text-sm text-neutral-400 leading-relaxed">
                         {faq.answer}
                       </div>
                     </motion.div>

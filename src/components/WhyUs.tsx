@@ -37,14 +37,14 @@ export function WhyUs() {
   ];
 
   return (
-    <section id="why" className="py-32 border-b border-white/5">
+    <section id="why" className="py-16 md:py-20 border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-20 max-w-2xl mx-auto text-center"
+          className="mb-10 md:mb-12 max-w-2xl mx-auto text-center"
         >
           <h2 className="text-sm font-mono text-neutral-500 uppercase tracking-widest mb-3 font-medium">Why InfoSightAI</h2>
           <h2 className="text-3xl md:text-4xl font-display font-medium tracking-tight text-white">
@@ -62,8 +62,8 @@ export function WhyUs() {
               transition={{ delay: index * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="h-full"
             >
-              <SpotlightCard className="h-full p-6 md:p-8">
-                <div className="w-8 h-8 rounded border border-white/10 flex items-center justify-center bg-white/5 mb-6">
+              <SpotlightCard className="h-full p-5 md:p-6">
+                <div className="w-8 h-8 rounded border border-white/10 flex items-center justify-center bg-white/5 mb-4">
                   {reason.icon}
                 </div>
                 <h4 className="text-lg font-medium text-white mb-2">{reason.title}</h4>

@@ -26,14 +26,14 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 border-b border-white/5 relative z-10 bg-black">
+    <section id="contact" className="py-16 md:py-20 border-b border-white/5 relative z-10 bg-black">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-10"
         >
           <h2 className="text-3xl md:text-5xl font-display font-medium text-white mb-6 tracking-tight">
             Let's build something <span className="bg-gradient-to-r from-neutral-400 to-neutral-600 bg-clip-text text-transparent">together.</span>
@@ -43,14 +43,14 @@ export function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="space-y-8">
+            <div className="space-y-6">
               <div className="flex gap-4 items-start">
                 <div className="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
                   <Mail className="text-white w-5 h-5" />
