@@ -7,7 +7,7 @@ export function Services() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   return (
-    <section id="services" className="py-24 md:py-32 border-t border-white/[0.04] bg-black relative z-10">
+    <section id="services" className="py-24 md:py-32 border-t border-white/[0.04] bg-transparent relative z-10">
       {/* Background ambient lighting */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-indigo-500/[0.015] blur-[160px] rounded-full pointer-events-none z-0" />
 

@@ -8,6 +8,7 @@ import { motion } from 'motion/react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Footer } from './components/Footer';
+import { NeuralVortexBackground } from './components/ui/interactive-neural-vortex-background';
 
 // Lazy loading below-the-fold components
 const Services = lazy(() => import('./components/Services').then(module => ({ default: module.Services })));
@@ -24,6 +25,9 @@ const CTA = lazy(() => import('./components/CTA').then(module => ({ default: mod
 export default function App() {
   return (
     <div className="bg-black text-neutral-300 min-h-screen relative overflow-x-hidden">
+      {/* Global Interactive Neural Vortex Background */}
+      <NeuralVortexBackground />
+
       {/* Animated Film Grain Overlay */}
       <div className="fixed inset-[-10%] z-50 pointer-events-none opacity-[0.035] bg-noise mix-blend-overlay animate-noise"></div>
       

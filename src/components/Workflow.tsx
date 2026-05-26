@@ -34,7 +34,7 @@ export function Workflow() {
   ];
 
   return (
-    <section className="py-24 md:py-32 border-b border-white/[0.04] bg-black relative overflow-hidden z-10">
+    <section className="py-24 md:py-32 border-b border-white/[0.04] bg-transparent relative overflow-hidden z-10">
       {/* Background ambient lighting */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[400px] h-[400px] bg-indigo-500/[0.01] blur-[120px] rounded-full pointer-events-none z-0" />
 

@@ -1,9 +1,7 @@
-import ShaderShowcase from "@/components/ui/hero";
+import InteractiveNeuralVortex from "@/components/ui/interactive-neural-vortex-background";
 
-export default function DemoOne() {
-  return (
-    <div className="min-h-screen h-full w-full">
-    <ShaderShowcase/>
-    </div>
-  );
-}
+const DemoOne = () => {
+  return <InteractiveNeuralVortex />;
+};
+
+export { DemoOne };
