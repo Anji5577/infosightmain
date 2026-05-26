@@ -8,9 +8,10 @@ const Spline = lazy(() => import('@splinetool/react-spline'))
 interface SplineSceneProps {
   scene: string
   className?: string
+  onLoad?: (splineApp: any) => void
 }
 
-export function SplineScene({ scene, className }: SplineSceneProps) {
+export function SplineScene({ scene, className, onLoad }: SplineSceneProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
 
@@ -44,6 +45,7 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
           <Spline
             scene={scene}
             className="w-full h-full"
+            onLoad={onLoad}
           />
         </Suspense>
       ) : (
