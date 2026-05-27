@@ -187,7 +187,9 @@ export function Stats() {
               {/* Top Row with monospaced tag and pulsing status indicator */}
               <div className="flex items-center justify-between mb-6">
                 <span className="text-[9px] font-mono text-neutral-500 tracking-widest">{stat.tag}</span>
-                <span className={`w-1.5 h-1.5 rounded-full ${stat.glow} animate-pulse`} />
+                {stat.glow !== 'bg-indigo-500' && stat.glow !== 'bg-cyan-500' && (
+                  <span className={`w-1.5 h-1.5 rounded-full ${stat.glow} animate-pulse`} />
+                )}
               </div>
 
               <div className="mb-4">

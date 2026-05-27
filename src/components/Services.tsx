@@ -62,7 +62,6 @@ export function Services() {
                 <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-indigo-500/10 to-transparent" />
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[10px] text-neutral-500">
                   <div className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/5 border border-white/5 text-neutral-300">
-                    <span className={`w-1.5 h-1.5 rounded-full ${hoveredCard === 1 ? 'bg-indigo-400 animate-ping' : 'bg-indigo-500 animate-pulse'}`} />
                     INGEST
                   </div>
                   <div className="flex-1 h-[1px] bg-gradient-to-r from-indigo-500/30 to-cyan-500/30 hidden sm:block relative overflow-hidden">
@@ -73,7 +72,6 @@ export function Services() {
                     />
                   </div>
                   <div className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/5 border border-white/5 text-neutral-300">
-                    <span className={`w-1.5 h-1.5 rounded-full ${hoveredCard === 1 ? 'bg-cyan-400 animate-ping' : 'bg-cyan-500 animate-pulse'}`} />
                     STRUCTURING (GEMINI)
                   </div>
                   <div className="flex-1 h-[1px] bg-gradient-to-r from-cyan-500/30 to-emerald-500/30 hidden sm:block relative overflow-hidden">

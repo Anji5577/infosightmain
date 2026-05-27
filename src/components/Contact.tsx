@@ -43,26 +43,7 @@ export function Contact() {
         <line x1="60%" y1="80%" x2="25%" y2="70%" stroke="rgba(99, 102, 241, 0.15)" strokeWidth="1" />
         <line x1="40%" y1="40%" x2="60%" y2="80%" stroke="rgba(99, 102, 241, 0.15)" strokeWidth="1" />
 
-        {/* Pulsing Clusters */}
-        <circle cx="15%" cy="20%" r="4" fill="#818cf8" />
-        <circle cx="15%" cy="20%" r="10" fill="none" stroke="#818cf8" strokeWidth="1" className="animate-pulse" />
 
-        <circle cx="40%" cy="40%" r="5" fill="#6366f1" />
-        <circle cx="40%" cy="40%" r="14" fill="none" stroke="#6366f1" strokeWidth="1" className="animate-pulse" />
-
-        <circle cx="25%" cy="70%" r="3.5" fill="#818cf8" />
-        <circle cx="25%" cy="70%" r="9" fill="none" stroke="#818cf8" strokeWidth="1" className="animate-pulse" />
-
-        <circle cx="70%" cy="25%" r="4.5" fill="#6366f1" />
-        <circle cx="70%" cy="25%" r="12" fill="none" stroke="#6366f1" strokeWidth="1" className="animate-pulse" />
-
-        <circle cx="85%" cy="60%" r="5" fill="#818cf8" />
-        <circle cx="85%" cy="60%" r="14" fill="none" stroke="#818cf8" strokeWidth="1" className="animate-pulse" />
-
-        <circle cx="60%" cy="80%" r="4" fill="#6366f1" />
-        <circle cx="60%" cy="80%" r="10" fill="none" stroke="#6366f1" strokeWidth="1" className="animate-pulse" />
-
-        <circle cx="10%" cy="50%" r="2.5" fill="#4f46e5" opacity="0.6" />
       </svg>
 
       <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">

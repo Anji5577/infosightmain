@@ -120,26 +120,6 @@ export const GridBeam: React.FC<{ children: React.ReactNode; className?: string 
       />
 
       {/* Pulsing Grid Intersections */}
-      {isDesktop && gridGlowNodes.map((node) => (
-        <motion.div
-          key={`node-${node.id}`}
-          style={{
-            left: `${node.x}%`,
-            top: `${node.y}%`,
-          }}
-          animate={{
-            scale: [0.8, 1.5, 0.8],
-            opacity: [0.15, 0.65, 0.15]
-          }}
-          transition={{
-            duration: 4,
-            repeat: Infinity,
-            delay: node.delay,
-            ease: "easeInOut"
-          }}
-          className="absolute w-2 h-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-500/80 shadow-[0_0_10px_rgba(99,102,241,0.8)] z-0 pointer-events-none"
-        />
-      ))}
 
       {/* Interactive mouse-follow spotlight glow (Dual-Intensity Cone) */}
       {isDesktop && (

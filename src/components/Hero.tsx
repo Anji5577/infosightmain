@@ -3,7 +3,6 @@ import { motion, useMotionValue, useSpring } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { SplineScene } from '@/components/ui/splite';
 import { Spotlight } from '@/components/ui/spotlight';
-import { GridBeam } from '@/components/ui/background-grid-beam';
 
 export function Hero() {
   const splineAppRef = useRef<any>(null);
@@ -119,7 +118,7 @@ export function Hero() {
 
   return (
     <section className="relative pt-36 pb-24 md:pt-48 md:pb-36 overflow-hidden flex lg:min-h-[95vh] items-center w-full bg-transparent">
-      <GridBeam className="w-full h-full py-16 md:py-24 flex items-center justify-center">
+      <div className="w-full h-full py-16 md:py-24 flex items-center justify-center relative overflow-hidden">
         {/* Spotlight Ambient Beam */}
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
@@ -226,7 +225,7 @@ export function Hero() {
           </div>
 
         </div>
-      </GridBeam>
+      </div>
     </section>
   );
 }

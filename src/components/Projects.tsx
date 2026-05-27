@@ -93,11 +93,6 @@ export function Projects() {
                           </div>
                           
                           <div className="flex-grow max-w-[40px] h-[1px] bg-indigo-500/20 relative">
-                            <motion.div 
-                              animate={{ left: ["0%", "100%"] }} 
-                              transition={{ duration: 1.8, repeat: Infinity, ease: "linear" }}
-                              className="absolute -top-0.5 w-1.5 h-1.5 rounded-full bg-indigo-400 shadow-[0_0_8px_#6366f1]"
-                            />
                           </div>
 
                           <div className="flex flex-col items-center gap-1.5">
@@ -106,11 +101,6 @@ export function Projects() {
                           </div>
 
                           <div className="flex-grow max-w-[40px] h-[1px] bg-cyan-500/20 relative">
-                            <motion.div 
-                              animate={{ left: ["0%", "100%"] }} 
-                              transition={{ duration: 1.8, repeat: Infinity, ease: "linear", delay: 0.9 }}
-                              className="absolute -top-0.5 w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#06b6d4]"
-                            />
                           </div>
 
                           <div className="flex flex-col items-center gap-1.5">
