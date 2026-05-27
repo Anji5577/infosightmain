@@ -6,10 +6,6 @@ export function Footer() {
       {/* Premium glowing divider separator line */}
       <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-white/[0.08] to-transparent" />
 
-      {/* Volumetric glows for cinematic horizon ending */}
-      <div className="absolute bottom-0 inset-x-0 h-[280px] bg-[radial-gradient(circle_at_center_bottom,rgba(99,102,241,0.03),transparent_70%)] pointer-events-none z-0" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[350px] h-[180px] bg-[radial-gradient(circle_at_center_bottom,rgba(167,139,250,0.025),transparent_60%)] pointer-events-none z-0 blur-[60px]" />
-
       <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
           <div className="lg:col-span-2">

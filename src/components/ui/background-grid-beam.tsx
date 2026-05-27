@@ -94,9 +94,6 @@ export const GridBeam: React.FC<{ children: React.ReactNode; className?: string 
 
   return (
     <div ref={containerRef} className={cn('relative w-full h-full overflow-hidden bg-transparent', className)}>
-      {/* Layered cinematic ambient glows */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(99,68,245,0.045),transparent_55%)] pointer-events-none z-0" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_50%,rgba(255,255,255,0.025),transparent_45%)] pointer-events-none z-0" />
 
       {/* Grid layer with parallax movement & slow automatic float fallback on mobile */}
       <motion.div
@@ -141,27 +138,7 @@ export const GridBeam: React.FC<{ children: React.ReactNode; className?: string 
         />
       ))}
 
-      {/* Interactive mouse-follow spotlight glow (Dual-Intensity Cone) */}
-      {isDesktop && (
-        <>
-          <motion.div
-            style={{
-              left: glowX,
-              top: glowY,
-              transform: 'translate(-50%, -50%)',
-            }}
-            className="absolute w-[600px] h-[600px] bg-indigo-500/[0.04] blur-[120px] rounded-full pointer-events-none z-0 mix-blend-screen"
-          />
-          <motion.div
-            style={{
-              left: glowX,
-              top: glowY,
-              transform: 'translate(-50%, -50%)',
-            }}
-            className="absolute w-[200px] h-[200px] bg-cyan-400/[0.07] blur-[45px] rounded-full pointer-events-none z-0 mix-blend-screen"
-          />
-        </>
-      )}
+
 
       {/* Floating stardust particles with horizontal drift */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
@@ -191,10 +168,7 @@ export const GridBeam: React.FC<{ children: React.ReactNode; className?: string 
         ))}
       </div>
       
-      {/* Soft interactive pulsing glow around the 3D model area */}
-      {isDesktop && (
-        <div className="absolute right-[8vw] top-[50%] -translate-y-1/2 w-[35vw] h-[35vw] max-w-[550px] max-h-[550px] bg-indigo-500/[0.035] blur-[90px] rounded-full pointer-events-none z-0 border border-indigo-500/[0.015] animate-pulse" style={{ animationDuration: '6s' }} />
-      )}
+
 
       <div className="relative z-10 w-full h-full">
         {children}

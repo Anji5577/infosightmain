@@ -13,8 +13,6 @@ export function Industries() {
 
   return (
     <section className="py-24 md:py-32 border-b border-white/[0.04] bg-neutral-950/20 relative z-10">
-      {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[400px] h-[400px] bg-indigo-500/[0.01] blur-[150px] rounded-full pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         

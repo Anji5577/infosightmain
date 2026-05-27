@@ -44,8 +44,6 @@ export function WhyUs() {
 
   return (
     <section id="why" className="py-24 md:py-32 border-b border-white/[0.04] bg-transparent relative z-10">
-      {/* Background ambient glow */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/[0.015] blur-[150px] rounded-full pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         

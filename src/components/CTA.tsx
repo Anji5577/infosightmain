@@ -7,9 +7,6 @@ export function CTA() {
     <section className="py-20 md:py-24 border-b border-white/5 relative overflow-hidden bg-transparent">
       {/* 3D Wireframe Depth System */}
       <SubtleMesh />
-
-      {/* Cinematic ambient glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/10 blur-[150px] rounded-full pointer-events-none z-0" />
       
       <div className="absolute inset-0 bg-neutral-950/20 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black_80%)]" />
       

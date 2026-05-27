@@ -34,34 +34,6 @@ export default function App() {
       {/* Cinematic Viewport Vignette */}
       <div className="fixed inset-0 z-40 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_45%,rgba(0,0,0,0.85)_100%)]"></div>
 
-      {/* Drifting Volumetric Glow Clouds */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <motion.div 
-          animate={{
-            x: [-80, 80, -80],
-            y: [-40, 40, -40],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute -top-[200px] -left-[200px] w-[600px] h-[600px] bg-indigo-500/[0.02] blur-[150px] rounded-full"
-        />
-        <motion.div 
-          animate={{
-            x: [80, -80, 80],
-            y: [40, -40, 40],
-          }}
-          transition={{
-            duration: 30,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute -bottom-[200px] -right-[200px] w-[500px] h-[500px] bg-cyan-500/[0.015] blur-[140px] rounded-full"
-        />
-      </div>
-
       <Navbar />
       <main className="relative z-10">
         <Hero />

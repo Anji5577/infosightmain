@@ -126,11 +126,6 @@ export function Hero() {
           fill="white"
         />
 
-        {/* Cinematic Deep Volumetric Glows */}
-        <div className="absolute top-0 left-0 w-full max-w-4xl h-[750px] bg-indigo-500/[0.015] blur-[150px] rounded-full pointer-events-none z-0" />
-        <div className="absolute top-1/4 left-1/4 w-full max-w-[550px] h-[550px] bg-indigo-500/10 blur-[170px] rounded-full pointer-events-none z-0 mix-blend-screen" />
-        <div className="absolute top-10 right-1/4 w-[600px] h-[600px] bg-cyan-500/[0.02] blur-[140px] rounded-full pointer-events-none z-0" />
-
         <div className="max-w-7xl mx-auto px-6 md:px-8 relative z-10 w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0">
           
           {/* Left Content Column */}
@@ -200,10 +195,6 @@ export function Hero() {
               }}
               className="w-full h-full flex items-center justify-center relative"
             >
-              {/* Volumetric glow directly behind the 3D model */}
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.06),transparent_65%)] pointer-events-none z-0 scale-125" />
-              <div className="absolute w-[80%] h-[80%] top-10 left-10 bg-[radial-gradient(circle_at_center,rgba(167,139,250,0.04),transparent_50%)] pointer-events-none z-0 blur-[70px] animate-pulse" style={{ animationDuration: '8s' }} />
-
               <SplineScene 
                 scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
                 className="w-full h-full pointer-events-auto"
