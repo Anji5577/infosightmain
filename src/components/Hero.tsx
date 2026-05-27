@@ -118,7 +118,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative pt-36 pb-24 md:pt-48 md:pb-36 overflow-hidden flex lg:min-h-[95vh] items-center w-full bg-black">
+    <section className="relative pt-36 pb-24 md:pt-48 md:pb-36 overflow-hidden flex lg:min-h-[95vh] items-center w-full bg-transparent">
       <GridBeam className="w-full h-full py-16 md:py-24 flex items-center justify-center">
         {/* Spotlight Ambient Beam */}
         <Spotlight

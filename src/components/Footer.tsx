@@ -2,7 +2,7 @@ import logo from '@/logo.png';
 
 export function Footer() {
   return (
-    <footer className="bg-black pt-20 pb-10 relative z-10 overflow-hidden">
+    <footer className="bg-transparent pt-20 pb-10 relative z-10 overflow-hidden">
       {/* Premium glowing divider separator line */}
       <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-white/[0.08] to-transparent" />
 

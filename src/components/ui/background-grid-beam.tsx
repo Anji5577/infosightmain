@@ -93,7 +93,7 @@ export const GridBeam: React.FC<{ children: React.ReactNode; className?: string 
       }
 
   return (
-    <div ref={containerRef} className={cn('relative w-full h-full overflow-hidden bg-black', className)}>
+    <div ref={containerRef} className={cn('relative w-full h-full overflow-hidden bg-transparent', className)}>
       {/* Layered cinematic ambient glows */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(99,68,245,0.045),transparent_55%)] pointer-events-none z-0" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_50%,rgba(255,255,255,0.025),transparent_45%)] pointer-events-none z-0" />

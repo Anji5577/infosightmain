@@ -1,7 +1,5 @@
-import InteractiveNeuralVortex from "@/components/ui/interactive-neural-vortex-background";
+import { BeamsBackground } from "@/components/ui/beams-background";
 
-const DemoOne = () => {
-  return <InteractiveNeuralVortex />;
-};
-
-export { DemoOne };
+export function BeamsBackgroundDemo() {
+    return <BeamsBackground />;
+}
