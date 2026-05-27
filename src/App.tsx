@@ -8,7 +8,6 @@ import { motion } from 'motion/react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Footer } from './components/Footer';
-import { NeuralVortexBackground } from './components/ui/interactive-neural-vortex-background';
 
 // Lazy loading below-the-fold components
 const Services = lazy(() => import('./components/Services').then(module => ({ default: module.Services })));
@@ -25,14 +24,39 @@ const CTA = lazy(() => import('./components/CTA').then(module => ({ default: mod
 export default function App() {
   return (
     <div className="bg-black text-neutral-300 min-h-screen relative overflow-x-hidden">
-      {/* Global Interactive Neural Vortex Background */}
-      <NeuralVortexBackground />
-
       {/* Animated Film Grain Overlay */}
       <div className="fixed inset-[-10%] z-50 pointer-events-none opacity-[0.035] bg-noise mix-blend-overlay animate-noise"></div>
       
       {/* Cinematic Viewport Vignette */}
       <div className="fixed inset-0 z-40 pointer-events-none bg-[radial-gradient(circle_at_center,transparent_45%,rgba(0,0,0,0.85)_100%)]"></div>
+
+      {/* Drifting Volumetric Glow Clouds */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <motion.div 
+          animate={{
+            x: [-80, 80, -80],
+            y: [-40, 40, -40],
+          }}
+          transition={{
+            duration: 25,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute -top-[200px] -left-[200px] w-[600px] h-[600px] bg-indigo-500/[0.02] blur-[150px] rounded-full"
+        />
+        <motion.div 
+          animate={{
+            x: [80, -80, 80],
+            y: [40, -40, 40],
+          }}
+          transition={{
+            duration: 30,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+          className="absolute -bottom-[200px] -right-[200px] w-[500px] h-[500px] bg-cyan-500/[0.015] blur-[140px] rounded-full"
+        />
+      </div>
 
       <Navbar />
       <main className="relative z-10">

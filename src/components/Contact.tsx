@@ -26,7 +26,11 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 border-b border-white/[0.04] relative z-10 bg-transparent overflow-hidden">
+    <section id="contact" className="py-24 md:py-32 border-b border-white/[0.04] relative z-10 bg-black overflow-hidden">
+      {/* Background ambient glows */}
+      <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-indigo-500/[0.015] blur-[150px] rounded-full pointer-events-none z-0" />
+      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-white/[0.01] blur-[130px] rounded-full pointer-events-none z-0" />
+
       {/* SVG Neural Node Mesh */}
       <svg className="absolute inset-0 w-full h-full opacity-[0.22] z-0 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
         <line x1="15%" y1="20%" x2="40%" y2="40%" stroke="rgba(99, 102, 241, 0.15)" strokeWidth="1" />

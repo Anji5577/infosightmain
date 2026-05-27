@@ -29,7 +29,9 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 md:py-32 border-b border-white/[0.04] bg-transparent relative z-10">
+    <section id="faq" className="py-24 md:py-32 border-b border-white/[0.04] bg-black relative z-10">
+      {/* Background ambient lighting */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-500/[0.01] blur-[150px] rounded-full pointer-events-none z-0" />
 
       <div className="max-w-3xl mx-auto px-6 md:px-8 relative z-10">
         
